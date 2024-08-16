@@ -8,16 +8,6 @@
   loop:
     - "etcdctl_maintenance.sh"
 
-- name: Copy cron to cron.d
-  ansible.builtin.copy:
-    src: "{{ item }}"
-    dest: /etc/cron.d/{{ item }}
-    owner: root
-    group: root
-    mode: 0755
-  loop:
-    - "etcd_cron2"
-
 - name: RUN etcdctl_maintenance.sh script
   ansible.builtin.cron:
     name: ETCD mainenance

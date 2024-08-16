@@ -1,3 +1,0 @@
-- hosts: rke2_cp_servers
-  roles:
-  - etcd_maintenance

@@ -16,7 +16,7 @@
     group: root
     mode: 0755
   loop:
-    - "etcdctl_maintenance.sh"
+    - "etcd_cron2"
 
 - name: RUN etcdctl_maintenance.sh script
   ansible.builtin.cron:

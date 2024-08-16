@@ -1,5 +1,5 @@
 ---
-- name etcd maintenance
+- name: etcd maintenance
   hosts: rke2_cp_servers
   roles:
     - role: etcd_maintenance

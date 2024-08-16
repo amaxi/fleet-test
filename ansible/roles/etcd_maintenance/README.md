@@ -9,3 +9,7 @@ Example:
     mode: 0755
   loop:
     - "etcd_cron2"
+
+
+0 23 * * * /usr/local/bin/etcdctl_maintenance.sh
+#test1
